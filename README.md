@@ -157,7 +157,6 @@
 <hr>
 
 <div align="center">
-<h1>Tarea 8</h1>
   <p><em>Segundo punto</em></p>
 </div>
 
@@ -167,3 +166,86 @@
   <h2>Hacer una red con estas 3 MVs</h2>
 </div>
 
+<ol>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/a97e9e8e-feb6-45a4-8e5f-86d37b1bb5b8"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/add9329f-313d-4616-840b-aeaf404c13f4"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/3acd2623-7091-4469-8e5b-5939891072cc"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/a9f85425-0baf-4d21-9516-081a6080518a"/></p>
+      <p><img width=850 src="https://github.com/user-attachments/assets/74449929-3443-446b-8e75-b69ad4e2ec7b"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/b2602c65-d2ad-4486-a719-bcf0cb6fa555"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/301d8725-b447-478e-8393-8b8584ee5307"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/dad3ea7b-bc47-4e34-b620-31911b25a71f"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/9c1aa796-3c75-4c21-bfa4-980d3f975eed"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/d8739909-68d7-43a8-ac9c-6be278f602fd"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+  <li><br>
+    <div align="center">
+      <p><img width=850 src="https://github.com/user-attachments/assets/82a8b662-4cbd-4614-8b64-a25526b1b751"/></p>
+    </div>
+    <p>
+      
+    </p>
+  </li>
+</ol>
