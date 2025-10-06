@@ -172,7 +172,7 @@
       <p><img width=850 src="https://github.com/user-attachments/assets/a97e9e8e-feb6-45a4-8e5f-86d37b1bb5b8"/></p>
     </div>
     <p>
-      
+      Primero hay que crear un switch virtual y esto se puede hacer desde virtual manager, uno coloca nueva conexion, y donde dicen redes virtuales, uno puede crear, eliminar o configurar una red virtual creada.
     </p>
   </li>
   <li><br>
@@ -180,7 +180,7 @@
       <p><img width=850 src="https://github.com/user-attachments/assets/add9329f-313d-4616-840b-aeaf404c13f4"/></p>
     </div>
     <p>
-      
+      Aqui cuando uno ya le dio al simbolo "+" donde uno agrega la nueva red, aparece el nombre que uno le quiere poner, en que modo quiere que este la red, uno también puede elejir el formato de la ip (IPv4 o IPv6), el recomendale y el que use es el IPv4 y uno pone la ip del switch, después de terminar eso, uno le da a finalizar y ya estaria la parte del switch.
     </p>
   </li>
   <li><br>
@@ -188,7 +188,7 @@
       <p><img width=850 src="https://github.com/user-attachments/assets/3acd2623-7091-4469-8e5b-5939891072cc"/></p>
     </div>
     <p>
-      
+      El siguiente paso seria abrir rocky y usar el comando para 
     </p>
   </li>
   <li><br>
