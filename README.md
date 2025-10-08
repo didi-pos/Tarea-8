@@ -172,80 +172,103 @@
       <p><img width=850 src="https://github.com/user-attachments/assets/a97e9e8e-feb6-45a4-8e5f-86d37b1bb5b8"/></p>
     </div>
     <p>
-      Primero hay que crear un switch virtual y esto se puede hacer desde virtual manager, uno coloca nueva conexion, y donde dicen redes virtuales, uno puede crear, eliminar o configurar una red virtual creada.
+      Primero hay que <b>crear un switch virtual</b>, lo cual se puede hacer desde <b>Virtual Manager</b>. Ahí seleccionamos <i>Nueva conexión</i> y, en la parte de <b>redes virtuales</b>, podemos crear, eliminar o configurar una red ya existente. 
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/add9329f-313d-4616-840b-aeaf404c13f4"/></p>
     </div>
     <p>
-      Aqui cuando uno ya le dio al simbolo "+" donde uno agrega la nueva red, aparece el nombre que uno le quiere poner, en que modo quiere que este la red, uno también puede elejir el formato de la ip (IPv4 o IPv6), el recomendale y el que use es el IPv4 y uno pone la ip del switch, después de terminar eso, uno le da a finalizar y ya estaria la parte del switch.
+      Cuando presionamos el símbolo <b>“+”</b> para agregar una nueva red, aparece una ventana donde podemos definir el <b>nombre</b> que queremos darle, el <b>modo</b> en el que funcionará, y el <b>formato de IP</b> (IPv4 o IPv6). 
+      El más recomendable —y el que yo usé— fue <b>IPv4</b>. Luego se asigna la dirección IP del switch y, al finalizar, se guarda la configuración. Con eso, <b>el switch virtual queda listo</b>.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/3acd2623-7091-4469-8e5b-5939891072cc"/></p>
     </div>
     <p>
-      El siguiente paso seria abrir rocky y usar el comando para 
+      El siguiente paso es abrir <b>Rocky Linux</b> y asignarle una IP para conectarlo directamente con el switch que acabamos de crear. 
+      El comando que se usa es:  
+      <code>sudo nmcli con add type ethernet con-name &lt;nombre_del_perfil&gt; ifname ens3 ipv4.addresses &lt;ip&gt;/24</code>.  
+      Es importante que la IP que asignemos esté dentro del mismo rango del switch.  
+      Luego se activa la conexión con: <code>sudo nmcli con up &lt;nombre_del_perfil&gt;</code>,  
+      y se puede verificar que todo esté correcto con: <code>ip link show</code>.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/a9f85425-0baf-4d21-9516-081a6080518a"/></p>
+      <p><img width=850 src="https://github.com/user-attachments/assets/2ef8bacb-4417-4d6a-804a-95fa58970b9c"/></p>     
       <p><img width=850 src="https://github.com/user-attachments/assets/74449929-3443-446b-8e75-b69ad4e2ec7b"/></p>
     </div>
     <p>
-      
+      Otra forma de hacerlo es de una manera más <b>gráfica e intuitiva</b>, usando el comando <code>sudo nmtui</code>.  
+      Aunque al principio puede parecer un poco confuso, solo hay que entrar en <i>Modificar conexión</i>, donde se muestran las redes disponibles.  
+      Ahí se puede <b>agregar una nueva red</b>, definir el <b>nombre del perfil</b> y el <b>dispositivo</b> (por ejemplo, <code>ens3</code>, <code>eth0</code> o <code>enp1s0</code>, que son nombres de interfaces de red).  
+      En mi caso era <code>ens3</code>. Finalmente, solo queda asignar la dirección IP en formato IPv4 y guardar los cambios.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/b2602c65-d2ad-4486-a719-bcf0cb6fa555"/></p>
     </div>
     <p>
-      
+      En <b>Kali Linux</b> el proceso es muy similar, aunque el <b>nombre de la interfaz de red</b> suele ser diferente al de Rocky.  
+      Es importante tener eso en cuenta, pero el procedimiento para agregar la IP es prácticamente el mismo.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/301d8725-b447-478e-8393-8b8584ee5307"/></p>
     </div>
     <p>
-      
+      En <b>Windows</b> el proceso es más <b>fácil y visual</b>.  
+      Solo hay que ir a <i>Configuración → Red e Internet</i>, y desde ahí se puede asignar o modificar la IP como se muestra en la imagen.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/dad3ea7b-bc47-4e34-b620-31911b25a71f"/></p>
     </div>
     <p>
-      
+      Luego simplemente se asigna la <b>IP deseada</b> junto con la <b>máscara de red</b>.  
+      Los demás campos no son necesarios, así que solo se aplican los cambios y la configuración queda lista.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/9c1aa796-3c75-4c21-bfa4-980d3f975eed"/></p>
     </div>
     <p>
-      
+      Con el comando <code>ipconfig</code> se puede verificar qué IP tiene asignada la red y confirmar que es la que configuramos.  
+      Después de revisar las IP de cada sistema operativo y encender todas las máquinas virtuales, se puede usar <code>ping &lt;ip&gt;</code> para comprobar si <b>hay conexión entre ellas</b> y confirmar que están en la misma red.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/d8739909-68d7-43a8-ac9c-6be278f602fd"/></p>
     </div>
     <p>
-      
+      En esta imagen se puede ver cómo <b>Kali</b> hace ping a las otras dos máquinas virtuales, mostrando que efectivamente <b>todas están conectadas en la misma red</b>.
     </p>
   </li>
+
   <li><br>
     <div align="center">
       <p><img width=850 src="https://github.com/user-attachments/assets/82a8b662-4cbd-4614-8b64-a25526b1b751"/></p>
     </div>
     <p>
-      
+      Finalmente, aquí se muestra cómo <b>Rocky Linux</b> realiza el mismo ensayo y obtiene respuestas positivas, lo que confirma nuevamente que las tres máquinas están comunicándose correctamente dentro de la misma red.
     </p>
   </li>
 </ol>
