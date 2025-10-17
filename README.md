@@ -12,25 +12,29 @@
 <hr>
 
 <div align="center">
-  <h2>Instalación de Maquinas Virtuales</h2>
+  <h2>Instalación de Máquinas Virtuales</h2>
 </div>
 
 <ol>
   <li><br>
     <div align="center">
-      <p><img <img width=850 src="https://github.com/user-attachments/assets/93d7e80e-8fad-462a-aafb-bfae5ee9ba79"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/93d7e80e-8fad-462a-aafb-bfae5ee9ba79"/></p>
     </div>
     <p>
-      Primero se instala qemu con el paso a paso que deje en la "Tarea-5", también se instala Virtual Mnager para gestionar las maquinas virtuales que tengamos pero en un entorno gráfico y fácil de usar.
+      Primero, se instala <b>QEMU</b> siguiendo el paso a paso que se dejó en la “Tarea-5”.  
+      También se instala <b>Virtual Manager</b>, una herramienta que permite gestionar las máquinas virtuales 
+      en un entorno gráfico, haciendo su uso mucho más fácil e intuitivo.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/c56bf092-b92d-47e7-9d7b-662432e4fdc8"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/c56bf092-b92d-47e7-9d7b-662432e4fdc8"/></p>
     </div>
     <p>
-      En el siguiente paso, aquí se realiza todo el proceso de creación de la VM, seleccionar la ubicación de la imagen <b>(.iso)</b>, el sistema operativo a instalar, la <b>memoria RAM</b> y los <b>núcleos de CPU</b> que se le asignarán        a la VM.  
-      Con eso listo, se puede iniciar el arranque del booteable y continuar con la instalación.
+      En este paso se realiza todo el proceso de creación de la máquina virtual: seleccionar la ubicación de la imagen <b>(.iso)</b>,
+      el sistema operativo a instalar, la cantidad de <b>memoria RAM</b> y los <b>núcleos de CPU</b> que se le asignarán.  
+      Con esto configurado, se puede iniciar el arranque del booteable y continuar con la instalación.
     </p>
   </li>
 </ol>
@@ -40,42 +44,51 @@
 <ol>
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/e1d671ea-49cd-44ac-b2de-2c13c34058c7"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/e1d671ea-49cd-44ac-b2de-2c13c34058c7"/></p>
     </div>
     <p>
-      Despuésm de hacer el proceso de qemu y virtual manager, aparece el inicio del arranque donde lo ponen a escoger que instalación quiere hacer, la primera siempre es la default.
+      Después de realizar el proceso con QEMU y Virtual Manager, aparece la pantalla de arranque, donde se elige el tipo de instalación.  
+      La primera opción suele ser la <b>default</b> y la más recomendable.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/7c3b7d74-288d-475b-892a-7dcf704d3031"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/7c3b7d74-288d-475b-892a-7dcf704d3031"/></p>
     </div>
     <p>
-      Aquí aparece la configuración de la instalación de Rocky, por la imagen (.iso), ya reconoce el idioma general y el del teclado y otras cosas default, pero uno si debe elegir el disco donde se va a almacenar el sistema operativo, pero ese es el que uno ya le asigno desde virtual manager al so, también te pide la cuenta del root si la quieres tener habilitada o deshabilitada, eso ya va si uno la usara después, y finalmente te pide la cuenta de usuario con su contraseña para poder ingresar al perfil al arrancar Rocky.
+      Aquí se muestra la configuración de la instalación de Rocky Linux.  
+      La imagen <b>(.iso)</b> ya reconoce automáticamente el idioma, el teclado y otras configuraciones por defecto.  
+      Sin embargo, es necesario elegir el disco donde se almacenará el sistema operativo (el que se asignó desde Virtual Manager).  
+      Además, se debe decidir si se habilita la cuenta <b>root</b> y crear el usuario principal con su respectiva contraseña.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/518480eb-3598-49f3-b3a2-b18b1095d38e"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/518480eb-3598-49f3-b3a2-b18b1095d38e"/></p>
     </div>
     <p>
-      Luego empieza a instalar el sistema operativo según el software que uno escogió, pero por lo general se deja el default como yo lo hize, el default es un software bastante liviano.
+      Luego comienza la instalación del sistema operativo según el software seleccionado.  
+      Generalmente se deja el modo <b>default</b>, que es una versión más liviana y práctica.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850  src="https://github.com/user-attachments/assets/c573519f-9a81-4698-9803-ee7bc12c6866"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/c573519f-9a81-4698-9803-ee7bc12c6866"/></p>
     </div>
     <p>
-      Si sale todo bien, se reiniciara el sistema y aparecera el usuario que uno creó.
+      Si todo sale bien, el sistema se reiniciará automáticamente y mostrará el usuario que se creó durante la instalación.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/08ba15d4-6ad7-4c08-810c-7349a8ce1690"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/08ba15d4-6ad7-4c08-810c-7349a8ce1690"/></p>
     </div>
     <p>
-      Ya a lo último debe aparecer la interfaz donde te da la opción de un tutorial si uno lo quiere hacer y la bienvenida en el terminal.
+      Finalmente, aparece la interfaz principal de Rocky Linux, ofreciendo un pequeño tutorial opcional y la bienvenida en el terminal.
     </p>
   </li>
 </ol>
@@ -85,71 +98,122 @@
 <ol>
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/b68413ce-5d28-4bbc-9f17-f26bc814783c"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/b68413ce-5d28-4bbc-9f17-f26bc814783c"/></p>
     </div>
     <p>
-      Primero al iniciar el arranque del booteable, aparece estas opciones de como uno lo quiere instalar, como dije el primero siempre es el más comodo y el default, pero yo por error elegí la segunda opcion que es hacer el proceso de instalación por consola.
+      Al iniciar el arranque del booteable, se muestran varias opciones de instalación.  
+      Normalmente se recomienda la primera, ya que es la más cómoda y automática.  
+      Sin embargo, por error seleccioné la segunda opción, que realiza la instalación mediante consola.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/0b372c81-e021-4189-9421-b515b4156809"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/0b372c81-e021-4189-9421-b515b4156809"/></p>
     </div>
     <p>
-      Luego, aparece el terminal donde lo pone a escoger el idioma general, el idioma del teclado, la region en la que uno esta, y uno va seleccionando con el número que aparece.
+      Luego, aparece una interfaz por consola donde se debe escoger el idioma general, el idioma del teclado y la región.  
+      Las selecciones se realizan escribiendo el número correspondiente a cada opción.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/c578defc-becb-41cb-a0fc-5ecc8845d4b9"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/c578defc-becb-41cb-a0fc-5ecc8845d4b9"/></p>
     </div>
     <p>
-      Después de elegir el idioma y la región, te pide colocar el nombre del dominio que uno le quiere colocar, después te pide el nombre completo de la cuenta para el usuario, el nombre como tal del usuario y la contraseña para ese usuario.
+      Tras elegir el idioma y la región, el instalador pide el <b>nombre del dominio</b>, el <b>nombre completo del usuario</b>, 
+      el <b>nombre de usuario</b> como tal y finalmente la <b>contraseña</b> para esa cuenta.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/ce92977e-e279-4c42-8001-c8755e1576c9"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/ce92977e-e279-4c42-8001-c8755e1576c9"/></p>
     </div>
     <p>
-      Después te aparecen las particiones, donde debe aparecer la que uno le colocó en virtual manager dedicada al sistema operativo, uno finalmente la escoge y te vuelve a preguntar si estas seguro, por seguridad y uno le da que "si".
+      A continuación, se muestran las particiones disponibles, donde debe aparecer la que se asignó en Virtual Manager.  
+      Se selecciona y se confirma la instalación en esa unidad cuando el sistema lo pregunte por seguridad.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/2aafe68e-5b4e-46e4-8f44-2d4f5d5dda18"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/2aafe68e-5b4e-46e4-8f44-2d4f5d5dda18"/></p>
     </div>
     <p>
-      Ahí cuando uno ya escoge la partición, el sistema la formatea de forma automatica y nos pregunta que software tanto de apps como de entorno gráfico uno quiere instalarle, GNOME y KDE Plasma son entornos gráficos que consumen muchos recursos, entonces uno elije el Xfce y se puede elejir default tools, las herramientas y apps mas usadas.
+      Una vez seleccionada la partición, el sistema la formatea automáticamente y solicita elegir qué tipo de entorno gráfico instalar.  
+      <b>GNOME</b> y <b>KDE Plasma</b> son más pesados, así que se recomienda <b>Xfce</b>, que es más liviano.  
+      También se pueden instalar las <b>default tools</b> (herramientas más comunes de Kali).
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/b4839564-3a81-48cd-87da-d837c8566d01"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/b4839564-3a81-48cd-87da-d837c8566d01"/></p>
     </div>
     <p>
-      Ya cuando uno escoge que descargar, hace el proceso de instalación y cuanto termina se reinicia el sistema para que finalmente cargue el sistema operativo que se instaló.
+      Tras seleccionar las opciones deseadas, el sistema inicia la instalación y, una vez completada, se reinicia para cargar el entorno de Kali Linux.
     </p>
   </li>
+
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/f775cc95-2152-4041-9235-c0c70d466f8a"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/f775cc95-2152-4041-9235-c0c70d466f8a"/></p>
     </div>
     <p>
-      Una vez uno coloca el usuario y la contraseña, aparece la interfaz de inicio con las aplicaciones que se descargaron según el software que uno eligio en la instalacion del SO.
+      Finalmente, al iniciar sesión con el usuario y contraseña creados, se muestra la interfaz de inicio con las aplicaciones 
+      y herramientas instaladas según la configuración elegida durante la instalación.
     </p>
   </li>
 </ol>
 
-<h2>Windows</h2>
+<div align="center">
+  <h2>Windows</h2>
+</div>
 
 <ol>
   <li><br>
     <div align="center">
-      <p><img width=850 src="https://github.com/user-attachments/assets/b4839564-3a81-48cd-87da-d837c8566d01"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/46fd26a4-7d3c-42e0-a25d-c10563cd96f4"/></p>
     </div>
     <p>
-      
+      Al iniciar la instalación de Windows, primero aparecen las opciones de idioma, formato de hora y moneda, y el idioma del teclado.
+      Estas configuraciones permiten adaptar el sistema a la región y preferencias del usuario, algo que no todos los sistemas operativos incluyen durante la instalación.
+    </p>
+  </li>
+
+  <li><br>
+    <div align="center">
+      <p><img width="850" src="https://github.com/user-attachments/assets/56c3cd33-eb67-4234-bd10-f83359b9ec35"/></p>
+    </div>
+    <p>
+      Luego se muestra la opción para elegir entre diferentes versiones de Windows 11, como Home, Pro o Education, entre otras.
+      En este caso se selecciona <strong>Windows 11 Home</strong> por ser la versión más ligera, ideal para máquinas virtuales (VM),
+      ya que consume menos recursos de almacenamiento y hardware. Esto es importante considerando que se instalarán tres máquinas virtuales,
+      y solo se necesita lo básico del sistema operativo.
+    </p>
+  </li>
+
+  <li><br>
+    <div align="center">
+      <p><img width="850" src="https://github.com/user-attachments/assets/8d3e54ad-e831-4103-be33-86fd7c93713c"/></p>
+    </div>
+    <p>
+      Después de elegir la versión, el sistema solicita iniciar sesión con una cuenta de Microsoft.
+      Esto permite crear una copia de seguridad y realizar una configuración más personalizada del sistema,
+      mejorando la experiencia del usuario dentro del entorno Windows.
+    </p>
+  </li>
+
+  <li><br>
+    <div align="center">
+      <p><img width="850" src="https://github.com/user-attachments/assets/23d74af0-f606-470f-977b-262e87b2c6fa"/></p>
+      <p><img width="850" src="https://github.com/user-attachments/assets/2cd0dedc-1551-44c0-9d91-c5d1bd43751f"/></p>
+    </div>
+    <p>
+      Finalmente, tras completar las configuraciones iniciales, aparece la pantalla de bloqueo de <strong>Windows 11</strong>.
+      Una vez dentro, se muestra el escritorio predeterminado, desde donde el usuario puede comenzar a utilizar el sistema operativo de manera normal.
     </p>
   </li>
 </ol>
